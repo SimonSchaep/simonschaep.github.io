@@ -66,8 +66,25 @@
 								<li><b>Platform:</b> PC browser</li>
 
 							</ul>
+							<br>
+							<br>
 							<p>
-								More Info
+								This game was made for a game jam that lasted two days and a half, but me managed to created quite an impressive game in that 
+								short amount of time. The game is story based, so your boat roughly follows a path towards the end, but you can influence it's movements 
+								by standing on the side of the boat that you want it to move towards. So for example standing on the left will make the boat turn left.
+								<br>
+								<br>
+								The boat follows a path and has a certain distance it can stray from that path, I made a little tool to place down waypoints that form 
+								a path and have a customizable width, this made it easier for our level designers to create the level.
+								<br>
+								<br>
+								Making the player able to walk on the boat was a bit tricky. We wanted to parent the player to the boat, so it would always stay attached.
+								That meant we couldn't use a rigidbody and colliders to make the player movement restricted to the boat because the boat already has a 
+								rigidbody, and having two in the same hierarchy can cause lots of bugs. So I had to write custom 2D collision code that made it so the 
+								player couldn't walk if it would land outside the boat.
+								<br>
+								<br>
+								Overall I had a great experience and learned a lot about working together and creating working code quickly.
 							</p>
 						</div>
 					</div>
